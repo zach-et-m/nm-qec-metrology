@@ -216,6 +216,7 @@ def QuantumFisherInformation_SingleQubit(rho,drho):
 
             # NOTE 1e-12 is a tolerance here to avoid numerical errors
             # TODO Make the tolerance a parameter of the function
+            # rather than being hard-coded in
             if np.abs(denom) >= 1e-12 :
                 QFI += 2*np.abs(np.trace(num))**2 / denom
 
